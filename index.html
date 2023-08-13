@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Product Calculator</title>
+
+        <link rel="stylesheet" href="Styles/styles.css">
+
+    </head>
+
+    <body>
+
+        <form>
+
+            <label for="num1">Enter A Value : </label>
+
+            <input type="text" id="num1" name="num1" required><br><br>
+
+
+            <label for="num2">Enter B Value : </label>
+
+            <input type="text" id="num2" name="num2" required><br><br>
+
+
+            <input type="button" value="Multiply" onclick="calProduct()"><br><br>
+
+
+            <label for="result">Product Of Two Values : </label>
+
+            <input type="text" id="result" name="result" readonly>
+
+        </form>
+
+
+        <script>
+
+            function calProduct() {
+
+                var num1 = parseFloat(document.getElementById("num1").value);
+
+                var num2 = parseFloat(document.getElementById("num2").value);
+
+                var product = num1 * num2;
+
+                document.getElementById("result").value = product;
+
+
+            }
+
+        </script>
+
+    </body>
+
+</html>
